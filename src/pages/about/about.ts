@@ -11,4 +11,7 @@ export class AboutPage {
 
   }
 
+  buttonClickAction(event) {
+    console.log(event.target)
+  }
 }

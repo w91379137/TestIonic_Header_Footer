@@ -1,11 +1,55 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
+
+    <!-- 如果階級調換 title 會擋到左邊的按鈕 -->
     <ion-title>
       About
     </ion-title>
+
+    <ion-buttons>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        1
+      </button>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        2
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        3
+      </button>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        4
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="secondary">
+
+    <ion-buttons>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        1
+      </button>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        2
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        3
+      </button>
+      <button ion-button color="save" (click)="buttonClickAction($event)">
+        4
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>
