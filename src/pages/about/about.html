@@ -27,7 +27,21 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-list>
 
+    <ng-template ngFor let-data [ngForOf]="dataArray">
+
+      <ion-list-header>
+        第 {{data.title}} 類
+      </ion-list-header>
+
+      <ion-item *ngFor="let item of data.list">
+        名稱{{item}}
+      </ion-item>
+
+    </ng-template>
+
+  </ion-list>
 </ion-content>
 
 <ion-footer>
