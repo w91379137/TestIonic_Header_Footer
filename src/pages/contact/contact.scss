@@ -1,3 +1,10 @@
 page-contact {
-
+  page-about {
+    .scroll-content{
+      margin-bottom: 0px !important;
+    }
+    ion-footer {
+      bottom: 0px !important;
+    }
+  }
 }
