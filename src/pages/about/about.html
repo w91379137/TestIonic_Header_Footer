@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="secondary">
 
-    <!-- 如果階級調換 title 會擋到左邊的按鈕 -->
+    <!-- 需要 pointer-events: none; 可能會遮到東西 -->
     <ion-title>
       About
     </ion-title>
@@ -26,7 +26,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding fullScreen no-bounce>
   <ion-list>
 
     <ng-template ngFor let-data [ngForOf]="dataArray">

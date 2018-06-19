@@ -12,7 +12,7 @@ export class AboutPage {
   constructor(
     public navCtrl: NavController
   ) {
-    let category = Array.from({ length: 20 }, (_, i) => i)
+    let category = Array.from({ length: 10 }, (_, i) => i)
     this.dataArray = category.map(number => new DataBlock(number.toString(), Array.from({ length: 10 }, (_, i ) => (i + number * 10).toString())))
   }
 
