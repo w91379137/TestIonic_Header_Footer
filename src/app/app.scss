@@ -16,29 +16,31 @@
 // automatically applied to the <body> element in the app.
 
 .custom-wide-popover {
-  div .popover-content {
+  .popover-content {
       width: auto;
       height: auto;
       left: 20px !important;
       right: 20px !important;
       top: 20px !important;
       bottom: 0px !important;
+  }
+  //為了讓 page 放入 popover 不會因為 內容延展 導致 header footer 無法正常定位
+  .scroll-content {
+    position: fixed;
+  }
+}
 
-      //為了讓 page 放入 popover 不會因為 內容延展 導致 header footer 無法正常定位
-      overflow: hidden;
-  }
-  //為了讓 page 放入 popover 不會因為 內容延展 導致 header footer 無法正常定位
-  div .popover-viewport {
-    height: 100%;
-  }
-  //為了讓 page 放入 popover 不會因為 內容延展 導致 header footer 無法正常定位
-  div .scroll-content {
-    height: 100%;
-  }
-  ion-backdrop {
-      opacity: 0.4;
-  }
-  ion-content {
-    height: 100%;
+.popoverCss {
+  .popover-content {
+
+    bottom: 5vh !important;
+    left: 2vw !important;
+    top: 5vh !important;
+    width: 96vw;
+    overflow: hidden;
+
+    .scroll-content {
+      position: fixed;
+    }
   }
 }

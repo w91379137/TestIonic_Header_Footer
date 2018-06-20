@@ -23,6 +23,11 @@ export class HomePage {
   }
 
   popoverAction2() {
+    let popover = this.popoverCtrl.create(AboutPage, {}, { cssClass: 'popoverCss' })
+    popover.present()
+  }
+
+  popoverAction3() {
     let popover = this.popoverCtrl.create(AboutPage, {}, { cssClass: 'custom-wide-popover' })
     popover.present()
   }
