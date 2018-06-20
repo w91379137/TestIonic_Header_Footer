@@ -1,17 +1,17 @@
-$about-page-header-height: 40px;
-$about-page-footer-height: 40px;
+$about-page-header-height: 80px;
+$about-page-footer-height: 90px;
 
 page-about {
   ion-header {
     height: $about-page-header-height;//default 56px
     ion-navbar {
-      min-height: 0px !important;//default 56px
+      min-height: $about-page-header-height !important;//default 56px
     }
   }
   ion-footer {
     height: $about-page-footer-height;//default 56px
     ion-toolbar {
-      min-height: 0px !important;//default 56px
+      min-height: $about-page-footer-height !important;//default 56px
     }
   }
 
