@@ -1,4 +1,16 @@
 page-about {
+  ion-header {
+    height: 40px;//default 56px
+    ion-navbar {
+      min-height: 0px !important;//default 56px
+    }
+  }
+  ion-footer {
+    height: 40px;//default 56px
+    ion-toolbar {
+      min-height: 0px !important;//default 56px
+    }
+  }
   ion-title {
     position: absolute;
     top: 0;
