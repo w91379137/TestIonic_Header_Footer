@@ -7,8 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
-  constructor(public navCtrl: NavController) {
+  select: string
 
+  constructor(public navCtrl: NavController) {
+    this.select = "Left"
   }
 
 }

@@ -1,11 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+    <ion-segment mode="md" [(ngModel)]="select">
+      <ion-segment-button value="Left">
+        Left List
+      </ion-segment-button>
+      <ion-segment-button value="Right">
+        Right List
+      </ion-segment-button>
+    </ion-segment>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <page-about></page-about>
+  <!-- <div [ngSwitch]="select" style="width: 100%; height: 100%;">
+    <page-about *ngSwitchCase="0" style="width: 100%; height: 100%;"></page-about>
+    <page-about *ngSwitchCase="1" style="width: 100%; height: 100%;"></page-about>
+  </div> -->
+
+  <page-about [ngClass]="{hide: select === 'Left'}"></page-about>
+  <page-about [ngClass]="{hide: select === 'Right'}"></page-about>
+
 </ion-content>
