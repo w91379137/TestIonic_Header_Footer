@@ -13,7 +13,7 @@ export class AboutPage {
     public navCtrl: NavController
   ) {
     let category = Array.from({ length: 10 }, (_, i) => i)
-    this.dataArray = category.map(number => new DataBlock(number.toString(), Array.from({ length: 10 }, (_, i ) => (i + number * 10).toString())))
+    this.dataArray = category.map(number => new DataBlock(number.toString(), Array.from({ length: 10 }, (_, i) => (i + number * 10).toString())))
   }
 
   buttonClickAction(event) {
@@ -25,5 +25,5 @@ class DataBlock {
   constructor(
     public title: string = "",
     public list: string[] = []
-  ) {}
+  ) { }
 }
