@@ -1,11 +1,15 @@
 page-contact {
   page-about {
-    .scroll-content{
-      margin-bottom: 0px !important;
+    //page margin-bottom margin-top 要自己設定
+    .scroll-content {
+      margin-bottom: 56px !important;
     }
-    ion-footer {
-      bottom: 0px !important;
+    .scroll-content {
+      margin-top: 56px !important;
     }
+  }
+  ion-footer {
+    bottom: 0px !important;
   }
   .hide {
     display: none;

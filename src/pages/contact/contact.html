@@ -17,7 +17,7 @@
     <page-about *ngSwitchCase="1" style="width: 100%; height: 100%;"></page-about>
   </div> -->
 
-  <page-about [ngClass]="{hide: select === 'Left'}"></page-about>
-  <page-about [ngClass]="{hide: select === 'Right'}"></page-about>
+  <page-about class="left" [ngClass]="{hide: select !== 'Left'}"></page-about>
+  <page-about class="right" [ngClass]="{hide: select !== 'Right'}"></page-about>
 
 </ion-content>
