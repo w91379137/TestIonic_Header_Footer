@@ -1,16 +1,19 @@
 page-contact {
   page-about {
-    page margin-bottom margin-top 要自己設定
+    //page margin-bottom margin-top 要自己設定
+    //在 嵌入版本
+    //margin-top 會是 自己的 header high 但是 有時候 會沒有 生效設定上去
+    //margin-bottom 會是 自己的 footer + tabbar 的 high 但是 自己不是 全螢幕 所以 tabbar 的 high 就多了
     .scroll-content {
-      margin-bottom: 56px !important;
-    }
-    .scroll-content {
-      margin-top: 56px !important;
+      margin-top: $about-page-header-height !important;
+      margin-bottom: $about-page-footer-height !important;
     }
   }
   ion-footer {
     bottom: 0px !important;
   }
+
+  //用來 隱藏沒有顯示的 page
   .hide {
     display: none;
   }
